@@ -1,0 +1,19 @@
+https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+
+class solution{
+private ArrayList<Integer> s = new ArrayList<Integer>();
+public ArrayList<Integer> dfs= OfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+    boolean print[] =new boolean[V];
+    DFS(0,adj,print);
+    return s;
+    }
+   public void DFS(int v,ArrayList<ArrayList<Integer>> adj,boolean[] print);
+   :
+print[v]=true;
+s.add(v);
+for(Integer i:adj.get(v)){
+if(!print[i])
+DFS(print(i,adj,print);
+}
+}
+}
