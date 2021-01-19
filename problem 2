@@ -1,0 +1,14 @@
+class Solution:
+    def bfsOfGraph(self,V, adj):
+        visited = [False]*V
+        que = []
+        que.append(0)
+        visited[0] = True
+        while(que):
+            curr = que.pop(0)
+            print(curr, end=' ')
+            for i in adj[curr]:
+                if visited[i]!=True:
+                    visited[i] = True
+                    que.append(i)
+        return que
